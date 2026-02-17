@@ -25,7 +25,7 @@ jobs:
     needs: [find_exercise]
     runs-on: ubuntu-latest
     env:
-      ISSUE_REPOSITORY: ${{ github.repository }}
+      ISSUE_REPOSITORY: ${{ github.repository }} 
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
 
     steps:
